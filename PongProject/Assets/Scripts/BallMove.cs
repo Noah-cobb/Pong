@@ -25,9 +25,18 @@ public class BallMove : MonoBehaviour
         ball.AddForce(force);
     }
 
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name == "Goal")
+        {
+            Reset();
+
+        }
+    }
     public void Reset()
     {
-        ball.MovePosition(new Vector2(0,0));
+        ball.MovePosition(new Vector2(0, 0));
         ball.velocity = new Vector2(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f)).normalized * speed;
     }
+    
 }
