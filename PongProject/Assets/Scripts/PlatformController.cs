@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlatformController : MonoBehaviour
 {
     public float speed = 5;
-    public KeyCode DownKey;
-    public KeyCode UpKey;
+    public KeyCode downKey;
+    public KeyCode upKey;
     Rigidbody2D platform;
 
     // Start is called before the first frame update
@@ -18,11 +18,11 @@ public class PlatformController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(UpKey))
+        if (Input.GetKey(upKey))
         {
             platform.MovePosition(platform.position + new Vector2(0, speed) * Time.fixedDeltaTime);
         }
-        if (Input.GetKey(DownKey))
+        if (Input.GetKey(downKey))
         {
             platform.MovePosition(platform.position + new Vector2(0, -speed) * Time.fixedDeltaTime);
         }
