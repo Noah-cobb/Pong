@@ -5,11 +5,11 @@ using UnityEngine;
 public class SceneChange : MonoBehaviour
 {
     // Start is called before the first frame update
-    public string NextScene = "Level 1";
+    public string ChangeScene = "Level 1";
 
-    public void ChangeScene()
+    public void LoadScene()
     {
-        SceneManager.LoadScene(NextScene);
+        SceneManager.LoadScene(ChangeScene);
 
     }
 

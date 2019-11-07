@@ -269,9 +269,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: abfeb04380a300142a8e2204d678e21c, type: 3}
-        m_MethodName: 
-        m_Mode: 5
+      - m_Target: {fileID: 547773053}
+        m_MethodName: LoadScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abfeb04380a300142a8e2204d678e21c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: Level 1
+  ChangeScene: Level 1
 --- !u!1 &1118734482
 GameObject:
   m_ObjectHideFlags: 0
