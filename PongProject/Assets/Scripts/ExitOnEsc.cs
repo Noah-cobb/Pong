@@ -17,5 +17,9 @@ public class ExitOnEsc : MonoBehaviour
         {
             Application.Quit();
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            print("Esc");
+        }
     }
 }
