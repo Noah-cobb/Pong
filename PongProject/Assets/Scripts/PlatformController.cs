@@ -7,6 +7,8 @@ public class PlatformController : MonoBehaviour
     public float speed = 5;
     public KeyCode downKey;
     public KeyCode upKey;
+    public KeyCode resetKey = KeyCode.Space;
+    public float resetPos;
     Rigidbody2D platform;
 
     // Start is called before the first frame update
@@ -21,10 +23,21 @@ public class PlatformController : MonoBehaviour
         if (Input.GetKey(upKey))
         {
             platform.MovePosition(platform.position + new Vector2(0, speed) * Time.fixedDeltaTime);
+            platform.SetRotation(0);
         }
         if (Input.GetKey(downKey))
         {
             platform.MovePosition(platform.position + new Vector2(0, -speed) * Time.fixedDeltaTime);
+            platform.SetRotation(0);
         }
+        if (Input.GetKey(resetKey))
+        {
+            Reset();
+        }
+    }
+    public void Reset()
+    {
+        platform.MovePosition(new Vector2(resetPos, 0));
+        platform.SetRotation(0);
     }
 }
