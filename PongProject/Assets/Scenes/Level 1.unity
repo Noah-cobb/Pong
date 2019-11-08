@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c63838b2371d1a44aead9945b2912c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 7.5
   downKey: 274
   upKey: 273
 --- !u!1 &402438033
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d11d5798401074b8faff04b4c80153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 9
   startKey: 32
 --- !u!1 &796241300
 GameObject:
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c63838b2371d1a44aead9945b2912c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 7.5
   downKey: 115
   upKey: 119
 --- !u!1 &1860433997
