@@ -6,6 +6,7 @@ using static PlatformController;
 public class BallMove : MonoBehaviour
 {
     public float speed = 4;
+    //key to reset game state
     public KeyCode startKey = KeyCode.Space;
     public PlatformController[] controllers;
     Rigidbody2D ball;
@@ -31,7 +32,7 @@ public class BallMove : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        
+        //detect collision, reset when collide
         if (col.gameObject.name == "Goal")
         {
             Reset();
@@ -40,11 +41,12 @@ public class BallMove : MonoBehaviour
     }
     public void Reset()
     {
+        //reset both platforms
         for(int i = 0; i < controllers.Length; i++)
         {
             controllers[i].Reset();
         }
-        Input.GetKey(startKey);
+        //reset position, move in random direction
         ball.MovePosition(new Vector2(0, 0));
         ball.velocity = new Vector2(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f)).normalized * speed;
     }
