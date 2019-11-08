@@ -14,7 +14,7 @@ public class BallMove : MonoBehaviour
     void Start()
     {
         ball = GetComponent<Rigidbody2D>();
-        Reset();
+        // Reset();
     }
 
     // Update is called once per frame
@@ -35,6 +35,7 @@ public class BallMove : MonoBehaviour
         if (col.gameObject.name == "Goal")
         {
             Reset();
+            ball.velocity = new Vector2(0, 0);
         }
     }
     public void Reset()
@@ -43,6 +44,7 @@ public class BallMove : MonoBehaviour
         {
             controllers[i].Reset();
         }
+        Input.GetKey(startKey);
         ball.MovePosition(new Vector2(0, 0));
         ball.velocity = new Vector2(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f)).normalized * speed;
     }
