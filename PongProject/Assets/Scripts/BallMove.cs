@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BallMove : MonoBehaviour
 {
+    
     public float speed = 4;
     public KeyCode startKey = KeyCode.Space;
     Rigidbody2D ball;
@@ -27,6 +28,7 @@ public class BallMove : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        
         if (col.gameObject.name == "Goal")
         {
             Reset();
