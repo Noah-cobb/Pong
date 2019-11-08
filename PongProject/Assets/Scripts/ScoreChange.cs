@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 public class ScoreChange : MonoBehaviour
 {
     private int currentScore;
     public Text scoreText;
+    public string ChangeScene = "Level 2";
     // Use this for initialization
     void Start()
     {
@@ -16,6 +18,11 @@ public class ScoreChange : MonoBehaviour
     {
         scoreText.text = "Player Score: " + currentScore;
     }
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(ChangeScene);
+
+    }
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -23,6 +30,13 @@ public class ScoreChange : MonoBehaviour
         {
             currentScore++;
             HandleScore();
+        }
+    }
+    private void Update()
+    {
+        if (currentScore == 10)
+        {
+            LoadScene();
         }
     }
 }
