@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c63838b2371d1a44aead9945b2912c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7.5
+  speed: 8
   downKey: 274
   upKey: 273
 --- !u!1 &402438033
@@ -774,7 +774,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d1e557a01603a4f43805022ded514c81, type: 3}
-  m_Color: {r: 0.28836492, g: 1, b: 0.2688679, a: 1}
+  m_Color: {r: 1, g: 0.047946326, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d11d5798401074b8faff04b4c80153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9
+  speed: 9.5
   startKey: 32
 --- !u!1 &796241300
 GameObject:
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c63838b2371d1a44aead9945b2912c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7.5
+  speed: 8
   downKey: 115
   upKey: 119
 --- !u!1 &1860433997
