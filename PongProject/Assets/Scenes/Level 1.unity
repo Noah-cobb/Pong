@@ -475,6 +475,8 @@ MonoBehaviour:
   speed: 8
   downKey: 274
   upKey: 273
+  resetKey: 32
+  resetPos: 7
 --- !u!1 &402438033
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,6 +851,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 9.5
   startKey: 32
+  controllers:
+  - {fileID: 1680103091}
+  - {fileID: 393328428}
 --- !u!1 &796241300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,6 +1386,8 @@ MonoBehaviour:
   speed: 8
   downKey: 115
   upKey: 119
+  resetKey: 32
+  resetPos: -7
 --- !u!1 &1860433997
 GameObject:
   m_ObjectHideFlags: 0
