@@ -20,6 +20,7 @@ public class PlatformController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //move platform when keys pressed
         if (Input.GetKey(upKey))
         {
             platform.MovePosition(platform.position + new Vector2(0, speed) * Time.fixedDeltaTime);
@@ -35,6 +36,7 @@ public class PlatformController : MonoBehaviour
             Reset();
         }
     }
+    //resets position and rotation
     public void Reset()
     {
         platform.MovePosition(new Vector2(resetPos, 0));
