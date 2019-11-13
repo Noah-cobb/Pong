@@ -16,7 +16,8 @@ public class ScoreChange : MonoBehaviour
 
     private void HandleScore()
     {
-        scoreText.text = "Player Score: " + currentScore;
+       scoreText.text = "Player Score: " + currentScore; 
+       
     }
     public void LoadScene()
     {
@@ -28,7 +29,7 @@ public class ScoreChange : MonoBehaviour
     {
         if (col.gameObject.name == "Circle")
         {
-            currentScore++;
+            currentScore++; 
             HandleScore();
         }
     }
