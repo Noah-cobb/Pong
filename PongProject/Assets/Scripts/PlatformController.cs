@@ -9,12 +9,18 @@ public class PlatformController : MonoBehaviour
     public KeyCode upKey;
     public KeyCode resetKey = KeyCode.Space;
     public float resetPos;
+    Transform transformer;
+    Vector3 currentScale;
+    Vector3 origScale;
     Rigidbody2D platform;
 
     // Start is called before the first frame update
     void Start()
     {
         platform = GetComponent<Rigidbody2D>();
+        transformer = GetComponent<Transform>();
+        origScale = transformer.localScale;
+        currentScale = transformer.localScale;
     }
 
     // Update is called once per frame
@@ -41,5 +47,17 @@ public class PlatformController : MonoBehaviour
     {
         platform.MovePosition(new Vector2(resetPos, 0));
         platform.SetRotation(0);
+        transformer.localScale = origScale;
+        currentScale = origScale;
+    }
+    //detect ball collide, 
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        //detect collision, reset when collide
+        if (col.gameObject.name == "Circle")
+        {
+            currentScale.y = currentScale.y * 0.95f;
+            transformer.localScale = currentScale;
+        }
     }
 }
