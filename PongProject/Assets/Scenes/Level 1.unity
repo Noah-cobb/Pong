@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 402438035}
+  ChangeScene: Level 2
 --- !u!1 &378891943
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393328423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.98, y: 0, z: 0}
+  m_LocalPosition: {x: 7.1, y: 0, z: 0}
   m_LocalScale: {x: 0.3936236, y: 2.4191778, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1124,6 +1125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 378891945}
+  ChangeScene: Level 2
 --- !u!1 &1019434014
 GameObject:
   m_ObjectHideFlags: 0
