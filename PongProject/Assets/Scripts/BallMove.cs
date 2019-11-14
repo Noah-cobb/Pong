@@ -35,8 +35,11 @@ public class BallMove : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        //increase speed
-        currentSpeed = currentSpeed * speedMultiplier;
+        //increase speed if it hits a platform
+        if (col.gameObject.name == "Player1" || col.gameObject.name == "Player2")
+        {
+            currentSpeed = currentSpeed * speedMultiplier;
+        }
         //detect collision, reset when collide
         if (col.gameObject.name == "Goal")
         {
