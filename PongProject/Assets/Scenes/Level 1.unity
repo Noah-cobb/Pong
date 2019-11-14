@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512e2d388f973c94481ddbbbee1f7155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 402438035}
+  scoreText: {fileID: 0}
   ChangeScene: Level 2
 --- !u!1001 &199762068
 PrefabInstance:
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 378891946}
   - component: {fileID: 378891945}
   m_Layer: 5
-  m_Name: scoreText
+  m_Name: scoreText2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -931,7 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512e2d388f973c94481ddbbbee1f7155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 378891945}
+  scoreText: {fileID: 0}
   ChangeScene: Level 2
 --- !u!1001 &880630841
 PrefabInstance:
