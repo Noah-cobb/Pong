@@ -189,7 +189,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a3bfb933a724a2342b37d34afa98cefc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1120,17 +1120,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 23d321305a19dfd42a982cb8f276f862,
+      objectReference: {fileID: 21300000, guid: 2994c1a646d914246b9f9c4c4c9ad0da,
         type: 3}
+    - target: {fileID: 7903148739295981320, guid: 22501caa9075d7948b05c75a5d052490,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903148739295981320, guid: 22501caa9075d7948b05c75a5d052490,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903148739295981320, guid: 22501caa9075d7948b05c75a5d052490,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7903148739295981333, guid: 22501caa9075d7948b05c75a5d052490,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.025610315
+      value: 0.0256103
       objectReference: {fileID: 0}
     - target: {fileID: 7903148739295981333, guid: 22501caa9075d7948b05c75a5d052490,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.0000022526783
+      value: 0.062363498
       objectReference: {fileID: 0}
     - target: {fileID: 7903148739295981333, guid: 22501caa9075d7948b05c75a5d052490,
         type: 3}
@@ -1140,7 +1155,7 @@ PrefabInstance:
     - target: {fileID: 7903148739295981333, guid: 22501caa9075d7948b05c75a5d052490,
         type: 3}
       propertyPath: m_Size.y
-      value: 13.033477
+      value: 11.9108715
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22501caa9075d7948b05c75a5d052490, type: 3}
@@ -1353,27 +1368,42 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a9b6115693ba18d4484a59d4c1a54993,
+      objectReference: {fileID: 21300000, guid: 22994102c473e174f9e5a1b2b7d7a6a7,
         type: 3}
+    - target: {fileID: 7903148739295981320, guid: 22501caa9075d7948b05c75a5d052490,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903148739295981320, guid: 22501caa9075d7948b05c75a5d052490,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903148739295981320, guid: 22501caa9075d7948b05c75a5d052490,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7903148739295981333, guid: 22501caa9075d7948b05c75a5d052490,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.1578587
+      value: 0.02070383
       objectReference: {fileID: 0}
     - target: {fileID: 7903148739295981333, guid: 22501caa9075d7948b05c75a5d052490,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.0000011263389
+      value: -0.0000035106677
       objectReference: {fileID: 0}
     - target: {fileID: 7903148739295981333, guid: 22501caa9075d7948b05c75a5d052490,
         type: 3}
       propertyPath: m_Size.y
-      value: 13.29435
+      value: 12.29647
       objectReference: {fileID: 0}
     - target: {fileID: 7903148739295981333, guid: 22501caa9075d7948b05c75a5d052490,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.7422756
+      value: 1.7422767
       objectReference: {fileID: 0}
     - target: {fileID: 7903148739295981332, guid: 22501caa9075d7948b05c75a5d052490,
         type: 3}
