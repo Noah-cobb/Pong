@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlatformController : MonoBehaviour
 {
     public float speed = 5;
+    public float sizeReduction = 0.95f;
     public KeyCode downKey;
     public KeyCode upKey;
     public KeyCode resetKey = KeyCode.Space;
@@ -56,7 +57,7 @@ public class PlatformController : MonoBehaviour
         //detect collision, reset when collide
         if (col.gameObject.name == "Circle")
         {
-            currentScale.y = currentScale.y * 0.95f;
+            currentScale.y = currentScale.y * sizeReduction;
             transformer.localScale = currentScale;
         }
     }
