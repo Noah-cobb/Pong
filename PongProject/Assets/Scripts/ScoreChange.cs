@@ -7,9 +7,11 @@ public class ScoreChange : MonoBehaviour
     private int currentScore;
     public Text scoreText;
     public string ChangeScene = "Level 2";
+    private AudioSource audio;
     // Use this for initialization
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         currentScore = 0;
         HandleScore();
     }
@@ -31,6 +33,8 @@ public class ScoreChange : MonoBehaviour
         {
             currentScore++; 
             HandleScore();
+            audio.Play();
+            
         }
     }
     private void Update()

@@ -13,9 +13,11 @@ public class BallMove : MonoBehaviour
     float currentSpeed;
     Rigidbody2D ball;
     Vector2 force;
+    private AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         ball = GetComponent<Rigidbody2D>();
         currentSpeed = speed;
         // Reset();
@@ -46,6 +48,7 @@ public class BallMove : MonoBehaviour
             Reset();
             ball.velocity = new Vector2(0, 0);
         }
+        else audio.Play();
     }
     public void Reset()
     {
