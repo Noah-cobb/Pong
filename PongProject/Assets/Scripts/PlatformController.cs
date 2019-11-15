@@ -14,7 +14,7 @@ public class PlatformController : MonoBehaviour
     Vector3 currentScale;
     Vector3 origScale;
     Rigidbody2D platform;
-    private AudioSource audio;
+    private AudioSource audioS;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class PlatformController : MonoBehaviour
         transformer = GetComponent<Transform>();
         origScale = transformer.localScale;
         currentScale = transformer.localScale;
-        audio = GetComponent<AudioSource>();
+        audioS = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -59,7 +59,7 @@ public class PlatformController : MonoBehaviour
         //detect collision, reset when collide
         if (col.gameObject.name == "Circle")
         {
-            audio.Play();
+            audioS.Play();
             currentScale.y = currentScale.y * sizeReduction;
             transformer.localScale = currentScale;
         }
